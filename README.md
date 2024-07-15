@@ -1,4 +1,6 @@
 #DB set up 
+
+
 CREATE TABLE IF NOT EXISTS `student` (
   `id` int NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) DEFAULT NULL,
