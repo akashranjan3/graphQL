@@ -1,0 +1,21 @@
+type Query {
+	firstQuery : String
+	secondQuery : String
+	fullName(firstName : String, lastName: String) : String
+	showHuman(goodHuman: GoodHuman) : String
+	student(id: Int): Student
+	studentAll: [Student]
+}
+
+input  GoodHuman {
+	firstName: String!
+#	use ! to make field mandatory
+	lastName: String
+}
+type  Student {
+id: Int
+	firstName: String
+	lastName: String
+	location: String
+	dob: String
+}
