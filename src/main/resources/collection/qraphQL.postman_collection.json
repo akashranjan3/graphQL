@@ -1,0 +1,459 @@
+{
+    "info": {
+        "name": "qraphQL",
+        "_postman_id": "29656ff8-d3c0-4e57-88dc-c91ce78fbc3e",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "htttp",
+            "item": [
+                {
+                    "name": "get all ",
+                    "request": {
+                        "url": {
+                            "raw": "http://localhost:3434/api/all",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3434",
+                            "path": [
+                                "api",
+                                "all"
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [],
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [],
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "one",
+            "request": {
+                "url": {
+                    "raw": "http://localhost:4240/graphql",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4240",
+                    "path": [
+                        "graphql"
+                    ]
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "graphql",
+                    "graphql": {
+                        "query": "query{\r\n  firstQuery\r\n}",
+                        "variables": ""
+                    },
+                    "options": {
+                        "raw": {
+                            "language": "text"
+                        }
+                    }
+                },
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": [],
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            }
+        },
+        {
+            "name": "second",
+            "request": {
+                "url": {
+                    "raw": "http://localhost:4240/graphql",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4240",
+                    "path": [
+                        "graphql"
+                    ]
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "graphql",
+                    "graphql": {
+                        "query": "query{\r\n  secondQuery\r\n}",
+                        "variables": ""
+                    },
+                    "options": {
+                        "raw": {
+                            "language": "text"
+                        }
+                    }
+                },
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": [],
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            }
+        },
+        {
+            "name": "full name ",
+            "request": {
+                "url": {
+                    "raw": "http://localhost:4240/graphql",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4240",
+                    "path": [
+                        "graphql"
+                    ]
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "graphql",
+                    "graphql": {
+                        "query": "{\r\n  fullName(firstName: \"Akash\", lastName: \"Ranjan\")\r\n}\r\n",
+                        "variables": ""
+                    },
+                    "options": {
+                        "raw": {
+                            "language": "text"
+                        }
+                    }
+                },
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": [],
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            }
+        },
+        {
+            "name": "good people ",
+            "request": {
+                "url": {
+                    "raw": "http://localhost:4240/graphql",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4240",
+                    "path": [
+                        "graphql"
+                    ]
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "graphql",
+                    "graphql": {
+                        "query": "\r\n{\r\n  showHuman(goodHuman: {firstName: \"akash\" lastName: \"ranjan\"})\r\n}\r\n\r\n",
+                        "variables": ""
+                    },
+                    "options": {
+                        "raw": {
+                            "language": "text"
+                        }
+                    }
+                },
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": [],
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            }
+        },
+        {
+            "name": "all Student",
+            "request": {
+                "url": {
+                    "raw": "http://localhost:4240/api/all",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4240",
+                    "path": [
+                        "api",
+                        "all"
+                    ]
+                },
+                "method": "GET",
+                "header": [],
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": [],
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            }
+        },
+        {
+            "name": "hello",
+            "request": {
+                "url": {
+                    "raw": "http://localhost:4240/api/hello",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4240",
+                    "path": [
+                        "api",
+                        "hello"
+                    ]
+                },
+                "method": "GET",
+                "header": [],
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": [],
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            }
+        },
+        {
+            "name": "by id ",
+            "request": {
+                "url": {
+                    "raw": "http://localhost:4240/api/get/1",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4240",
+                    "path": [
+                        "api",
+                        "get",
+                        "1"
+                    ]
+                },
+                "method": "GET",
+                "header": [],
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": [],
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            }
+        },
+        {
+            "name": "jpa query",
+            "item": [
+                {
+                    "name": "find by id ",
+                    "request": {
+                        "url": {
+                            "raw": "http://localhost:4240/graphql",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "4240",
+                            "path": [
+                                "graphql"
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "graphql",
+                            "graphql": {
+                                "query": "{\r\n  student(id: 1) {\r\n    id\r\n    firstName\r\n    lastName\r\n    location\r\n    dob\r\n  }\r\n}\r\n",
+                                "variables": ""
+                            },
+                            "options": {
+                                "raw": {
+                                    "language": "text"
+                                }
+                            }
+                        },
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [],
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    }
+                },
+                {
+                    "name": "find by id  2",
+                    "request": {
+                        "url": {
+                            "raw": "http://localhost:4240/graphql",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "4240",
+                            "path": [
+                                "graphql"
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "graphql",
+                            "graphql": {
+                                "query": "{\r\n  student(id: 2) {\r\n    id\r\n    firstName\r\n    lastName\r\n    location\r\n    dob\r\n  }\r\n}\r\n",
+                                "variables": ""
+                            },
+                            "options": {
+                                "raw": {
+                                    "language": "text"
+                                }
+                            }
+                        },
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [],
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    }
+                },
+                {
+                    "name": "find by id  2 selected filed ",
+                    "request": {
+                        "url": {
+                            "raw": "http://localhost:4240/graphql",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "4240",
+                            "path": [
+                                "graphql"
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "graphql",
+                            "graphql": {
+                                "query": "{\r\n  student(id: 2) {\r\n    firstName\r\n    location\r\n  }\r\n}\r\n",
+                                "variables": ""
+                            },
+                            "options": {
+                                "raw": {
+                                    "language": "text"
+                                }
+                            }
+                        },
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [],
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    }
+                },
+                {
+                    "name": "get all student ",
+                    "request": {
+                        "url": {
+                            "raw": "http://localhost:4240/graphql",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "4240",
+                            "path": [
+                                "graphql"
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "graphql",
+                            "graphql": {
+                                "query": "{\r\n  studentAll {\r\n    id\r\n    firstName\r\n    location\r\n    dob\r\n  }\r\n}\r\n",
+                                "variables": ""
+                            },
+                            "options": {
+                                "raw": {
+                                    "language": "text"
+                                }
+                            }
+                        },
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [],
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    }
+                },
+                {
+                    "name": "find by id  2 Copy",
+                    "request": {
+                        "url": {
+                            "raw": "http://localhost:4243/graphql",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "4243",
+                            "path": [
+                                "graphql"
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "graphql",
+                            "graphql": {
+                                "query": "{\r\n  student(id: 2) {\r\n    id\r\n    firstName\r\n    lastName\r\n    location\r\n    dob\r\n  }\r\n}\r\n",
+                                "variables": ""
+                            },
+                            "options": {
+                                "raw": {
+                                    "language": "text"
+                                }
+                            }
+                        },
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [],
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    }
+                }
+            ]
+        }
+    ],
+    "event": [],
+    "variable": []
+}
